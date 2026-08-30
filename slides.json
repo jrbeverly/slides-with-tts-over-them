@@ -1,0 +1,53 @@
+{
+  "output": "acme-sprint-report",
+  "demo": {"video": "assets/demo.mp4", "cue_seconds": 115.25},
+  "slides": [
+    {
+      "layout": "title",
+      "eyebrow": "Acme / Delivery Review",
+      "title": "Sprint report",
+      "date": "2026.05.04",
+      "subtitle": "A concise review of delivery health, release outcomes, and the next sprint.",
+      "metrics": [
+        {"value": "38", "label": "story points completed"},
+        {"value": "22", "label": "tickets closed"},
+        {"value": "0", "label": "critical production bugs"}
+      ]
+    },
+    {
+      "layout": "health",
+      "eyebrow": "Sprint health",
+      "title": "Delivery is moving faster",
+      "cycle_time": {"value": "2.1", "unit": "days", "change": "↓ 38% from last sprint"},
+      "build_success": "97%",
+      "velocity": [
+        {"label": "S-3", "value": 24},
+        {"label": "S-2", "value": 28},
+        {"label": "S-1", "value": 30},
+        {"label": "NOW", "value": 38}
+      ]
+    },
+    {
+      "layout": "shipped",
+      "eyebrow": "Release highlights",
+      "title": "Four outcomes shipped",
+      "items": [
+        {"title": "Unified notifications", "body": "One event-driven pipeline for email and push."},
+        {"title": "Mobile order summary", "body": "Approximately 40% faster page loads."},
+        {"title": "Reporting database", "body": "Read replicas delivered 6× faster queries."},
+        {"title": "Authentication fix", "body": "Closed intermittent multi-device session drops."}
+      ]
+    },
+    {
+      "layout": "next",
+      "eyebrow": "Next sprint",
+      "title": "Focus the reduced capacity",
+      "goals": [
+        {"title": "Ship account settings redesign", "body": "Stakeholder-ready self-service experience"},
+        {"title": "Start analytics model refactor", "body": "First phase of a cleaner reporting foundation"},
+        {"title": "Close payments technical debt", "body": "Finish the remaining reliability tickets"}
+      ],
+      "capacity": {"value": "28", "label": "story points", "note": "Sized for planned time off"}
+    }
+  ]
+}
